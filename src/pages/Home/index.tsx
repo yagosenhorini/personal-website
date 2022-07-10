@@ -1,7 +1,13 @@
 import React from 'react';
 
-// import * as S from './styled';
+import FirstSection from './components/FirstSection';
 
-const Home = () => <div>oi</div>;
+import * as S from './styled';
+
+const Home = () => (
+  <S.HomeWrapper>
+    <FirstSection />
+  </S.HomeWrapper>
+);
 
 export default Home;
