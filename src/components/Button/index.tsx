@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ButtonProps } from '@Types/Button';
+import { ButtonProps } from '@/interfaces/Button';
 
 import * as S from './styled';
 

@@ -1,7 +1,7 @@
 export const headerMenu = [
   {
     id: 1,
-    route: '#home',
+    route: '',
     title: 'Home',
     main: true,
   },

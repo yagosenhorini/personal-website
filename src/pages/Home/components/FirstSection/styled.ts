@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { rem } from 'polished';
 
 export const FirstSectionWrapper = styled.section`
-  width: 95%;
+  width: 100%;
   display: flex;
   margin: 0 auto;
   padding: ${rem(20)};

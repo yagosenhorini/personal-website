@@ -24,6 +24,7 @@ export const HeaderMenuWrapper = styled.ul`
 `;
 
 export const HeaderMenuItem = styled.li`
+  cursor: pointer;
   width: ${rem(60)};
   color: ${({ theme }) => theme.colors.black};
 

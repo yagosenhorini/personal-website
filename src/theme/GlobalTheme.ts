@@ -9,12 +9,13 @@ const GlobalTheme: DefaultTheme = {
   boxSizing: 'border-box',
 
   colors: {
-    main: '#256DB1',
+    main: '#E5E5E5',
     white: '#fff',
     black: '#000',
     red: '##f80306',
     darkRed: '#82090f',
     orange: '#ED7D31',
+    darkBlue: '#45577B',
   },
 
   fontPrimary: 'Arial',

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TitleProps } from '@Types/Title';
+import { TitleProps } from '@/interfaces/Title';
 
 import * as S from './styled';
 

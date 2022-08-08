@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FormProps } from '@Types/Form';
+import { FormProps } from '@/interfaces/Form';
 
 import * as S from './styled';
 
