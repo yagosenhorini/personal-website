@@ -22,8 +22,8 @@ const HeaderMenu = () => (
       />
     </S.LogoWrapper>
     <S.HeaderMenuWrapper>
-      {headerMenu.map(({ id, route, title, main }) => (
-        <Link key={id} href={route}>
+      {headerMenu.map(({ route, title, main }) => (
+        <Link key={route} href={route}>
           <S.HeaderMenuItem id={route} className={cx({ 'is--home': main })}>
             {title}
           </S.HeaderMenuItem>

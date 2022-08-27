@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { ButtonProps } from '@/interfaces/Button';
+import { ButtonProps } from '@Interfaces/Button';
 
 import * as S from './styled';
 
-const Button = ({ children, ...props }: ButtonProps) => (
-  <S.Button type="submit" {...props}>
+const Button = ({ children, type, ...props }: ButtonProps) => (
+  <S.Button type={type} {...props}>
     {children}
   </S.Button>
 );

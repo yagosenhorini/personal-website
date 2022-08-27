@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SubtitleProps } from '@/interfaces/Subtitle';
+import { SubtitleProps } from '@Interfaces/Subtitle';
 
 import * as S from './styled';
 

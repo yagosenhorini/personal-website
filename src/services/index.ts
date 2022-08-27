@@ -1,3 +1,4 @@
+/* eslint-disable promise/no-promise-in-callback */
 import axios from 'axios';
 
 import { BASE_URL } from '@Constants/index';
@@ -9,7 +10,7 @@ export const apiUrl = axios.create({
   },
 });
 
-apiUrl.interceptors.response.use(
+apiUrl.interceptors.request.use(
   (config) => config,
   (error) => Promise.reject(error)
 );

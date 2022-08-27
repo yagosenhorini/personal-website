@@ -9,7 +9,7 @@ const FirstSection = () => (
   <S.FirstSectionWrapper>
     <S.ColumnContent>
       <Title text="Olá, seja bem vindo" />
-      <Subtitle isBigger content="Eu sou Yago ;)" />
+      <Subtitle isBigger content="Meu nome é Yago ;)" />
     </S.ColumnContent>
   </S.FirstSectionWrapper>
 );

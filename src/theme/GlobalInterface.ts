@@ -15,6 +15,9 @@ declare module 'styled-components' {
       darkRed: string;
       darkBlue: string;
       orange: string;
+      lightGray: string;
+      darkGray: string;
+      descriptionGray: string;
     };
 
     fontPrimary: string;

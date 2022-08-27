@@ -7,7 +7,7 @@ import Header from '@Containers/Header';
 
 import { GlobalStyle } from '@Theme/GlobalStyle';
 import { GlobalTheme as theme } from '@Theme/GlobalTheme';
-import { AuthProvider } from '@/contexts/AuthContext';
+import { AuthProvider } from '@Contexts/AuthContext';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
