@@ -9,13 +9,13 @@ import * as S from './styled';
 const SecondSection = () => (
   <S.SecondSectionWrapper>
     <S.ColumnContent>
-      <Subtitle content="Sou desenvolvedor Front-End residente na cidade de São Paulo/SP" />
+      <Subtitle content="Desenvolvedor Front End" />
       <S.Description>
-        Atuo com desenvolvimento front-end há mais de quatro anos. Durante minha
+        Atuo com desenvolvimento front-end há mais de cinco anos. Durante minha
         carreira, passei por consultoria de marketing digital e startups.
       </S.Description>
       <S.EmailSection>
-        <S.EmailButton type="button">
+        <S.EmailButton href="mailto:yagosenhorini30@gmail.com">
           <EmailIcon width={16} height={16} style={{ marginRight: '10px' }} />
           Email
         </S.EmailButton>

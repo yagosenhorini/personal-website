@@ -3,11 +3,10 @@ import { ThemeProvider } from 'styled-components';
 import { render } from '@testing-library/react';
 
 import FirstSection from '@Pages/Home/components/FirstSection';
-
-import { GlobalTheme } from '@Theme/GlobalTheme';
+import theme from '@Theme/index';
 
 const componentToRender = render(
-  <ThemeProvider theme={GlobalTheme}>
+  <ThemeProvider theme={theme}>
     <FirstSection />
   </ThemeProvider>
 );

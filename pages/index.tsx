@@ -1,8 +1,8 @@
 import React from 'react';
 import { NextPage } from 'next';
+import Head from 'next/head';
 
 import Home from '@Pages/Home';
-import Head from 'next/head';
 
 const HomePage: NextPage = () => (
   <>
@@ -11,7 +11,7 @@ const HomePage: NextPage = () => (
       <link rel="preconnect" href="https://use.typekit.net/" />
       <link rel="stylesheet" href="https://use.typekit.net/nyq4zlo.css" />
     </Head>
-    <Home />;
+    <Home />
   </>
 );
 

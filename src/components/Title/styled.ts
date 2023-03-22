@@ -8,4 +8,9 @@ export const Title = styled.h1`
   font-size: ${rem(24)};
   margin-top: ${rem(100)};
   color: ${({ theme }) => theme.colors.orange};
+
+  /** */
+  ${({ theme }) => theme.mq.lessThan('sm')`
+    margin-top: ${rem(40)};
+  `}
 `;

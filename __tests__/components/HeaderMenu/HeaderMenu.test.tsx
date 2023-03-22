@@ -4,12 +4,12 @@ import { ThemeProvider } from 'styled-components';
 
 import HeaderMenu from '@Components/HeaderMenu';
 
-import { GlobalTheme } from '@Theme/GlobalTheme';
+import theme from '@Theme/index';
 
 jest.mock('next/image');
 
 const componentToRender = (
-  <ThemeProvider theme={GlobalTheme}>
+  <ThemeProvider theme={theme}>
     <HeaderMenu />
   </ThemeProvider>
 );

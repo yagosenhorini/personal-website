@@ -2,21 +2,23 @@ import { rem } from 'polished';
 import styled from 'styled-components';
 
 import { Title } from '@Components/Title/styled';
-import { mq } from '@Settings/index';
 
 export const AboutSectionWrapper = styled.section`
-  width: 85%;
-  margin: ${rem(80)} auto 0;
+  width: 90%;
   border-radius: ${rem(20)};
-  padding: ${rem(96)} ${rem(26)};
+  margin: ${rem(80)} auto ${rem(30)};
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.darkGray};
 
   /** */
-  ${mq.greaterThan('sm')`
+  ${({ theme }) => theme.mq.lessThan('sm')`
+    padding: ${rem(48)} ${rem(26)};
+  `};
+
+  /** */
+  ${({ theme }) => theme.mq.greaterThan('sm')`
     width: 95%;
-    padding-left: ${rem(28)};
-    padding-right: ${rem(28)};
+    padding: ${rem(96)} ${rem(28)};
   `};
 `;
 

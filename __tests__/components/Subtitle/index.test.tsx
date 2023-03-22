@@ -4,11 +4,11 @@ import { ThemeProvider } from 'styled-components';
 
 import Subtitle from '@Components/Subtitle';
 
-import { GlobalTheme } from '@Theme/GlobalTheme';
+import theme from '@Theme/index';
 
 describe('<Subtitle />', () => {
   const componentToRender = render(
-    <ThemeProvider theme={GlobalTheme}>
+    <ThemeProvider theme={theme}>
       <Subtitle isBigger content="Meu nome é Fulano ;)" />
     </ThemeProvider>
   );

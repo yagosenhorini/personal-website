@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 
 import LoginPage from '@Pages/Login';
 import { AuthProvider } from '@Contexts/AuthContext';
-import { GlobalTheme as theme } from '@Theme/GlobalTheme';
+import theme from '@Theme/index';
 
 describe('LoginPage', () => {
   const componentToRender = (

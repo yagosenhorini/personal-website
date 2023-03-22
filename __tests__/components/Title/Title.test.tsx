@@ -3,10 +3,10 @@ import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import Title from '@Components/Title';
-import { GlobalTheme } from '@Theme/GlobalTheme';
+import theme from '@Theme/index';
 
 const componentToRender = render(
-  <ThemeProvider theme={GlobalTheme}>
+  <ThemeProvider theme={theme}>
     <Title text="Bem vindo" />
   </ThemeProvider>
 );

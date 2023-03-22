@@ -2,15 +2,14 @@ import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import Header from '@Containers/Header';
-
-import { GlobalTheme } from '@Theme/GlobalTheme';
+import theme from '@Theme/index';
 
 jest.mock('next/image');
 
 describe('Header component', () => {
   it('should render the Header component', () => {
     const component = render(
-      <ThemeProvider theme={GlobalTheme}>
+      <ThemeProvider theme={theme}>
         <Header />
       </ThemeProvider>
     );

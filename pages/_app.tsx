@@ -5,9 +5,10 @@ import { ThemeProvider } from 'styled-components';
 import Footer from '@Containers/Footer';
 import Header from '@Containers/Header';
 
-import { GlobalStyle } from '@Theme/GlobalStyle';
-import { GlobalTheme as theme } from '@Theme/GlobalTheme';
 import { AuthProvider } from '@Contexts/AuthContext';
+
+import theme from '@Theme/index';
+import { GlobalStyle } from '@Theme/GlobalStyle';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
