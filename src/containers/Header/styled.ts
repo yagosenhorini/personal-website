@@ -8,4 +8,9 @@ export const Header = styled.header`
   display: flex;
   height: ${rem(36)};
   background-color: ${({ theme }) => theme.colors.main};
+
+  /** */
+  ${({ theme }) => theme.mq.lessThan('sm')`
+    padding: 0;
+  `}
 `;

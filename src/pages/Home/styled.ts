@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import { mq } from '@Settings/index';
-
 export const HomeWrapper = styled.main`
   width: 90%;
   display: flex;
@@ -15,7 +13,7 @@ export const Hero = styled.section`
   flex-direction: column;
 
   /** */
-  ${mq.greaterThan('sm')`
+  ${({ theme }) => theme.mq.greaterThan('sm')`
     flex-direction: row;
   `}
 `;

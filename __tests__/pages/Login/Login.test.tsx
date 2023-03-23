@@ -30,11 +30,11 @@ describe('LoginPage', () => {
     const $inputPassword = await findByTestId('password-input-component');
 
     await act(async () => {
-      await fireEvent.change($inputEmail, {
+      fireEvent.change($inputEmail, {
         target: { value: 'yagosenhorini@gmail.com' },
       });
-      await fireEvent.change($inputPassword, { target: { value: '123' } });
-      await fireEvent.submit($form);
+      fireEvent.change($inputPassword, { target: { value: '123' } });
+      fireEvent.submit($form);
     });
   });
 });

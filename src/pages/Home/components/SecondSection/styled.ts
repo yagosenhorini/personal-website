@@ -4,14 +4,9 @@ import { rem } from 'polished';
 export const SecondSectionWrapper = styled.section`
   width: 80%;
   display: flex;
-  justify-content: space-between;
-
-  /** */
-  ${({ theme }) => theme.mq.lessThan('sm')`
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-  `}
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 
   /** */
   ${({ theme }) => theme.mq.greaterThan('sm')`
@@ -19,6 +14,7 @@ export const SecondSectionWrapper = styled.section`
     padding: ${rem(20)};
     max-width: ${rem(363)};
     margin: ${rem(60)} auto 0;
+    justify-content: space-between;
   `}
 `;
 
