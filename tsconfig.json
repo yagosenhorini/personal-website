@@ -18,7 +18,6 @@
     "baseUrl": "./",
     "noImplicitAny": false,
     "paths": {
-      "@/*": ["./src/*"],
       "@Components/*": ["./src/components/*"],
       "@Containers/*": ["./src/containers/*"],
       "@Constants/*": ["./src/constants/*"],
@@ -28,14 +27,16 @@
       "@Hooks/*": ["./src/hooks/*"],
       "@Icons/*": ["./src/assets/icons/*"],
       "@Images/*": ["./src/assets/images/*"],
+      "@Interfaces/*": ["./src/interfaces/*"],
       "@Layouts/*": ["./src/layouts/*"],
       "@Mailer/*'": ["./src/mailer/*"],
       "@Pages/*": ["./src/pages/*"],
       "@Resources/*": ["./src/resources/*"],
+      "@Settings/*": ["./src/settings/*"],
       "@Services/*": ["./src/services/*"],
       "@Store/*": ["./src/store/*"],
       "@Theme/*": ["./src/theme/*"],
-      "@Types/*": ["./src/types/*"],
+      "@Types/*": ["src/interfaces/*"],
       "@Utils/*": ["./src/utils/*"]
     }
   },

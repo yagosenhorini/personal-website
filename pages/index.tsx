@@ -1,8 +1,18 @@
 import React from 'react';
 import { NextPage } from 'next';
+import Head from 'next/head';
 
-import LoginPage from '@Pages/Login';
+import Home from '@Pages/Home';
 
-const Login: NextPage = () => <LoginPage />;
+const HomePage: NextPage = () => (
+  <>
+    <Head>
+      <title>Yago dos Santos Senhorini - Desenvolvedor Front End</title>
+      <link rel="preconnect" href="https://use.typekit.net/" />
+      <link rel="stylesheet" href="https://use.typekit.net/nyq4zlo.css" />
+    </Head>
+    <Home />
+  </>
+);
 
-export default Login;
+export default HomePage;

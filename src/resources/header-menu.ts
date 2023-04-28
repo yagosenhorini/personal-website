@@ -1,25 +1,25 @@
 export const headerMenu = [
   {
     id: 1,
-    route: '#home',
+    route: '',
     title: 'Home',
     main: true,
   },
   {
     id: 2,
-    route: '#sobre',
+    route: '#about',
     title: 'Sobre',
     main: false,
   },
   {
     id: 3,
-    route: '#projetos',
+    route: '#projects',
     title: 'Projetos',
     main: false,
   },
   {
     id: 4,
-    route: '#serviços',
+    route: '#services',
     title: 'Serviços',
     main: false,
   },

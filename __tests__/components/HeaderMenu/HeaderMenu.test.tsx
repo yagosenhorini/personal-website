@@ -1,15 +1,17 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 import { ThemeProvider } from 'styled-components';
 
 import HeaderMenu from '@Components/HeaderMenu';
 
-import { GlobalTheme } from '@Theme/GlobalTheme';
+import theme from '@Theme/index';
 
 jest.mock('next/image');
+jest.mock('react-responsive');
 
 const componentToRender = (
-  <ThemeProvider theme={GlobalTheme}>
+  <ThemeProvider theme={theme}>
     <HeaderMenu />
   </ThemeProvider>
 );

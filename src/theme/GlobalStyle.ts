@@ -2,11 +2,12 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   * {
-    margin: ${({ theme }) => theme.margin};
-    padding: ${({ theme }) => theme.padding};
-    box-sizing: ${({ theme }) => theme.boxSizing};
-    outline: ${({ theme }) => theme.outline};
-    font-family: ${({ theme }) => theme.fontPrimary};
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: ${({ theme }) => theme.fonts.fontPrimary};
   }
 
   body {

@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 
 import Footer from '@Containers/Footer';
 
-import { GlobalTheme as theme } from '@Theme/GlobalTheme';
+import theme from '@Theme/index';
 
 describe('Footer component', () => {
   it('Should render the footer', () => {

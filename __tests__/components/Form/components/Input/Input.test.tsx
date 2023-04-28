@@ -1,10 +1,9 @@
 import React from 'react';
-
-import Input from '@Components/Form/components/Input';
 import { render, fireEvent } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
-import { GlobalTheme as theme } from '@Theme/GlobalTheme';
+import Input from '@Components/Form/components/Input';
+import theme from '@Theme/index';
 
 const mockedOnChange = jest.fn();
 

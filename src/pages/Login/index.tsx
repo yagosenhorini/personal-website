@@ -25,7 +25,7 @@ const LoginPage = () => {
 
   const onSubmit = handleSubmit(async (data: LoginForm) => {
     try {
-      await authDispatch(signIn(data));
+      authDispatch(signIn(data));
     } catch (err) {
       throw new Error('Failed to get user');
     }

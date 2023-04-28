@@ -1,4 +1,4 @@
-export const priceFormatter = (value, currency: string): string => {
+export const priceFormatter = (value: any, currency: string): string => {
   const numberValue = parseFloat(value);
 
   if (Number.isNaN(numberValue)) {
@@ -9,5 +9,5 @@ export const priceFormatter = (value, currency: string): string => {
     style: 'currency',
     currency,
   });
-  return formatter.format(value).trim();
+  return formatter.format(numberValue).trim();
 };
