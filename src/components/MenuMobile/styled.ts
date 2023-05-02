@@ -36,6 +36,6 @@ export const CloseButton = styled.button`
   height: ${rem(40)};
   font-size: ${rem(16)};
   color: ${({ theme }) => theme.colors.black};
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.main};
   border: ${rem(1)} solid ${({ theme }) => theme.colors.black};
 `;

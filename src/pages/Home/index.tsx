@@ -1,6 +1,14 @@
 import React from 'react';
-import AboutSection from './components/About';
+import Carousel from 'react-multi-carousel';
 
+import {
+  aboutDescription,
+  curiosities,
+  responsive,
+  textDescription,
+} from '@Constants/index';
+
+import AboutSection from './components/About';
 import FirstSection from './components/FirstSection';
 import SecondSection from './components/SecondSection';
 
@@ -10,9 +18,12 @@ const Home = () => (
   <S.HomeWrapper>
     <S.Hero>
       <FirstSection />
-      <SecondSection />
+      <SecondSection description={textDescription} />
     </S.Hero>
-    <AboutSection />
+    <Carousel responsive={responsive} infinite ssr>
+      <AboutSection title="Sobre mim" aboutDescription={aboutDescription} />
+      <AboutSection title="Curiosidades" aboutDescription={curiosities} />
+    </Carousel>
   </S.HomeWrapper>
 );
 
