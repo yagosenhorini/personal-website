@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { Title } from '@Components/Title/styled';
 
 export const AboutSectionWrapper = styled.section`
-  width: 90%;
+  width: 80%;
   border-radius: ${rem(20)};
-  margin: ${rem(80)} auto ${rem(30)};
+  margin: ${rem(50)} auto ${rem(10)};
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.darkGray};
 
@@ -17,13 +17,14 @@ export const AboutSectionWrapper = styled.section`
 
   /** */
   ${({ theme }) => theme.mq.greaterThan('sm')`
-    width: 95%;
-    padding: ${rem(96)} ${rem(28)};
+    width: 60%;
+    padding: ${rem(40)} ${rem(28)};
   `};
 `;
 
 export const AboutSectionTitle = styled(Title)`
   margin: 0;
+  font-weight: 500;
   font-size: ${rem(16)};
 `;
 

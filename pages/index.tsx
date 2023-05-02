@@ -8,8 +8,6 @@ const HomePage: NextPage = () => (
   <>
     <Head>
       <title>Yago dos Santos Senhorini - Desenvolvedor Front End</title>
-      <link rel="preconnect" href="https://use.typekit.net/" />
-      <link rel="stylesheet" href="https://use.typekit.net/nyq4zlo.css" />
     </Head>
     <Home />
   </>
